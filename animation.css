@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    animation:fadeIn 2s ease-in-out;
+}
+
+h1{
+    animation:zoomIn 1.5s ease-in-out;
+}
+
+h2{
+    animation:slideDown 2s ease-in-out;
+}
+
+p{
+    animation:fadeUp 2.5s ease-in-out;
+}
+
+img{
+    animation:float 4s ease-in-out infinite;
+    transition:0.5s;
+}
+
+img:hover{
+    transform:scale(1.08);
+}
+
+button{
+    animation:pulse 2s infinite;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes zoomIn{
+    from{
+        transform:scale(0);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+@keyframes slideDown{
+    from{
+        transform:translateY(-80px);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        transform:translateY(40px);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+    100%{
+        transform:translateY(0);
+    }
+}
+
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.08);
+    }
+    100%{
+        transform:scale(1);
+    }
+}

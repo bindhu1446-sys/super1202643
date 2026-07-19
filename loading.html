@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Preparing Your Surprise...</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.loader{
+width:120px;
+height:120px;
+border:12px solid #ffffff55;
+border-top:12px solid #ffffff;
+border-radius:50%;
+animation:spin 1s linear infinite;
+margin:30px auto;
+}
+
+@keyframes spin{
+100%{
+transform:rotate(360deg);
+}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎁 Preparing Your Surprise...</h1>
+
+<div class="loader"></div>
+
+<p>Please wait a few seconds...</p>
+
+</div>
+
+<script>
+
+setTimeout(function(){
+
+window.location.href="suprise.html";
+
+},5000);
+
+</script>
+
+</body>
+
+</html>
